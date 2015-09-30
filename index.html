@@ -4,67 +4,62 @@
 	<meta charset="utf-8">
     	<meta name="relaxrblog" content="about relaxr blog">
     	<meta name="relaxr" content="about">
-    	
-<title>
+    <title>
 	    Relaxr Blog
-</title>    
+    </title>    
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,600,300,300italic' rel='stylesheet' type='text/css'> 
         <link rel="stylesheet" href="css/style.css">
+        <script src="jquery-1.11.3.min.js"></script>
 </head>
     <body>
      <header>
-            <div class="nav cf">
-                <div class="logocontainer"><h1>Relaxr</h1></div>
-                <div class="navbar">
-                   <ul>
+          <div class="container">
+            <h1 class="logo">Relaxr</h1>
+            <nav>
+                <ul>
                     <li><a href="/about">About</a></li>
                     <li><a href="/FAQ">FAQ</a></li>
                     <li><a href="#">Team</a></li>
                     <li><a href="#">Contact Us</a></li>
                     <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-            </div>
+                </ul>
+            </nav>
+         </div>
      </header>
-<div id="wrap">    
-    <div id="left">
-        <article>
+    <div id="wrap">   
+       <div class="container cf"> 
+        <div id="left">
+            <article class="post">
                 <h2>How I implemented Relaxr in 2 weeks and changed my life.</h2>
                 <img src="images/blog_photo1.jpg" alt="blog_photo1">
-			    <p><span style="color:#606161; font-size:70px; font-weight:400; font-family: Open sans;">P</span>roin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.</p><p>roin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.</p>
-			    <a href="#">Read More ></a>
-        </article>
-        <hr/>
-        <article>
+                <p><span style="color:#606161; font-size:70px; font-weight:400; font-family: Open sans;">P</span>roin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.</p>
+                 <p class="readmore"><a href="#">read more</a></p>
+            </article>
+        <article class="post">
 			    <h2>I traveled across the globe thanks to Relaxr’s Excel auomation</h2>
 			    <img src="images/blog_photo2.jpg" alt="blog_photo2">
 			<p><span style="color:#606161; font-size:70px; font-weight:400; font-family: Open sans;">P</span>roin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla. </p><p>roin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla</p> 
-       <a href="#">Read More ></a>
+            <p class="readmore"><a href="#">read more</a></p>
         </article>
-    </div>
-    <div class="righthand">
-    <aside>
-            <h3>Categories</h3>
-            <nav>
-            <ul>
-                <li><a href="#">Success stories</a></li>
-				<li><a href="#">Stats</a></li>
-				<li><a href="#">How tos</a></li>
-				<li><a href="#">Best of</a></li>
-				<li><a href="#">Business tips</a></li>
-            </ul>
-            </nav>
+      </div>
+       <aside id="sidebar">
+        <h3>Categories</h3>
+                <ul>
+                    <li><a href="#">Success stories</a></li>
+                    <li><a href="#">Stats</a></li>
+                    <li><a href="#">How tos</a></li>
+                    <li><a href="#">Best of</a></li>
+                    <li><a href="#">Business tips</a></li>
+                </ul>
                 <h3>About Relaxr</h3>   
                 <p>Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.</p>
-        <a href="http://patnolanireland.github.io/fewd-curriculum/"><span style="font-weight: 600; font-family: open sans; font size: 22px;">Learn More</span></a>
-            </aside>
-            <aside>
                 <img src="images/ad-unit.png" alt="#">
-            </aside>
-        </div>
-     </div>
-      <div class="signup cf">
-                <a href="#">Sign Up Now!</a>
+        </aside>
+    </div>    
+</div>      
+     <aside id="signup">            
+      <a class="button blue" href="#">Sign Up Now!</a>
+     </aside>
         </div>
        <footer>
                 <h1>Relaxr</h1>
@@ -74,5 +69,15 @@
                     </ul>   
                 copyrightRelaxr
         </footer>
-</body>
+<script>
+$(document).ready(function(){
+    
+function toggleAnswer1() {
+  $('#answer1').slideToggle();
+}
+    $('#answer1').hide();
+    $('#question1').click(toggleAnswer1); 
+});
+</script>
+    </body>
 </html>
